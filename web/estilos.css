@@ -1,0 +1,138 @@
+:root{
+    --semestral: #E3F2FD;
+    --no-semestral: #d4e2ed;
+    --prerequisito:#82cef1;
+    --hoverOn:rgb(184, 181, 180);
+    --post:#95ca97;
+}
+
+body{
+    background-color: rgb(244, 243, 243);
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 9.5px;
+    table-layout: fixed;
+    width: 1700px;
+}
+@media (min-width: 1600px){
+    table{
+        width: 100%;
+    }
+}
+
+thead{
+    background-color: #738a9d;
+    color: white;
+}
+table td {
+    font-size: 90%;
+}
+table tr td{
+    padding: 0.3rem;
+}
+
+tr{
+    border-bottom: none;
+}
+
+th{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+td{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.3rem;
+}
+.up{
+    display: flex;
+    margin-left:10px;
+    justify-content: center;
+}
+
+.title{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.card-panel{
+    padding: 13px;
+    cursor: default;
+    border-radius: 2%;
+    box-shadow: 3px 3px #d4e2ed80;
+}
+.no-semestral{
+    background-color: var(--no-semestral);
+}
+
+.semestral{
+    background-color: var(--semestral);
+}
+
+.hoverOn{
+    background-color: var(--hoverOn) !important;
+    color: white;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.prerequisito{
+    background-color: var(--prerequisito) !important;
+    color: white;
+}
+.post{
+    background-color: var(--post)  !important;
+    color: white;
+}
+
+
+.square {
+    height: 50px;
+    width: 50px;
+    border: 1px rgb(202, 209, 211) solid;
+    box-shadow: 1px 1px var(--no-semestral);
+    margin: 10px 10px 10px 20px;
+  }
+
+.infografia{
+    margin: 0px 8px 8px 8px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 850px){
+    .infografia{
+        flex-direction: column;
+    }
+    .up a img{
+        margin-top: 28px;
+    }
+}
+
+img{
+    margin-top: 2px;
+}
+.align-infografia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}

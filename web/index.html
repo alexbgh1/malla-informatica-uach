@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Malla Informática Uach</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="image/logoUach.png" />
+</head>
+<body>
+    <main>
+        <div class="up">
+            <a href="https://www.uach.cl/dw/admision/plandeestudio.php?car=1708" style="height: 0;">
+                <img alt="logo uach" src="image/logoUach.png" width="50px" height="auto">
+            </a>
+            <h1 class="title" id ="carrera"></h1>
+        </div>
+        <table>
+            <thead>
+                <tr id="semestres">
+                    <!-- codigo.js inserta semestres -->
+                </tr>
+            </thead>
+            <tbody id="info-semestres">
+                <!-- codigo.js inserta la información de cada semestre -->
+            </tbody>
+        </table>
+        <div class="infografia">
+            <div class="align-infografia">
+                <div class="square" style="background-color: var(--semestral);"></div>
+                <p>Asignatura <b>Semestral</b></p>
+            </div>
+            <div class="align-infografia">
+                <div class="square" style="background-color: var(--no-semestral);"></div>
+                <p>Asignatura <b>No Semestral</b></p>
+            </div>
+            <div class="align-infografia">
+                <div class="square" style="background-color: var(--prerequisito);"></div>
+                <p>Asignaturas <b>Pre-requisitos</b></p>
+            </div>
+            <div class="align-infografia">
+                <div class="square" style="background-color: var(--post);"></div>
+                <p>Asignaturas <b>Desbloqueables</b></p>
+            </div>
+            <div class="align-infografia">
+                <a href="https://github.com/alexbgh1/Malla-informatica-interactiva">
+                    <img class="square" style="box-shadow:none;border:none;" src="image/logoGithub.png" width="50px"/>
+                </a>
+            </div>
+        </div>
+
+    </main>
+    <script src="code.js"></script>
+</body>
+</html>
