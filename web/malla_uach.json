@@ -1,577 +1,864 @@
 {
-    "carrera": "Ingeniería Civil Informática",
-    "semestres":11,
-    "malla": [
+  "carrera": "Ingeniería Civil Informática",
+  "semestres": 11,
+  "malla": [
+    {
+      "semestre": 1,
+      "cantidad_ramos": 5,
+      "ciclo": "Bachiller en Ciencias de la Ingeniería",
+      "ramos": [
         {
-        "semestre": 1,
-        "cantidad_ramos":5,
-        "ciclo":"Bachiller en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Álgebra para Ingeniería", "codigo":"BAIN065", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[
-                {"semestre":2,"codigo":"BAIN073"},
-                {"semestre":2,"codigo":"BAIN075"},
-                {"semestre":3,"codigo":"BAIN077"}]},
-
-            {"nombre":"Geometría para Ingeniería", "codigo":"BAIN067", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[
-                {"semestre":2,"codigo":"BAIN075"},
-                {"semestre":3,"codigo":"BAIN077"}]},
-
-            {"nombre":"Optativo 1", "codigo":"ELECT12", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[]},
-
-            {"nombre":"Introducción a la Programación", "codigo":"INFO063", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[
-                {"semestre":2,"codigo":"INFO081"},
-                {"semestre":2,"codigo":"INFO083"},
-                {"semestre":5,"codigo":"INFO128"}]},
-
-            {"nombre":"Taller de Ingeniería: Introducción a la profesión", "codigo":"INFO073", "semestral":false,
-            "prerequisitos":[],
-            "desbloquea":[{"semestre":2,"codigo":"INFO083"}]}
-        ]},
-
+          "nombre": "Álgebra para Ingeniería",
+          "codigo": "BAIN065",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": [
+            { "semestre": 2, "codigo": "BAIN073" },
+            { "semestre": 2, "codigo": "BAIN075" },
+            { "semestre": 3, "codigo": "BAIN077" }
+          ]
+        },
 
         {
-        "semestre": 2,
-        "cantidad_ramos":7,
-        "ciclo":"Bachiller en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Química para Ingeniería", "codigo":"BAIN069", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[
-                {"semestre":5,"codigo":"INFO128"}]},
-
-            {"nombre":"Comunicación idioma Español", "codigo":"BAIN071", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[]},
-
-            {"nombre":"Álgebra lineal para Ingeniería", "codigo":"BAIN073", "semestral":true,
-            "prerequisitos":[{"semestre":1,"codigo":"BAIN065"}],
-            "desbloquea":[
-                {"semestre":3,"codigo":"BAIN081"},
-                {"semestre":3,"codigo":"INFO085"},
-                {"semestre":4,"codigo":"BAIN091"},
-                {"semestre":6,"codigo":"INFO200"}]},
-
-            {"nombre":"Cálculo en una Variable", "codigo":"BAIN075", "semestral":true,
-            "prerequisitos":[
-                {"semestre":1,"codigo":"BAIN065"},
-                {"semestre":1,"codigo":"BAIN067"}],
-            "desbloquea":[
-                {"semestre":3,"codigo":"BAIN081"},
-                {"semestre":3,"codigo":"BAIN083"},
-                {"semestre":4,"codigo":"BAIN085"}]},
-
-            {"nombre":"Educación física y salud", "codigo":"DYRE070", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[]},
-
-            {"nombre":"Programación", "codigo":"INFO081", "semestral":true,
-            "prerequisitos":[{"semestre":1,"codigo":"INFO063"}],
-            "desbloquea":[
-                {"semestre":3,"codigo":"INFO085"},
-                {"semestre":3,"codigo":"INFO088"}]},
-        
-            {"nombre":"Taller de Ingeniería: Programación aplicada", "codigo":"INFO083","semestral":false,
-            "prerequisitos":[
-                {"semestre":1,"codigo":"INFO063"},
-                {"semestre":1,"codigo":"INFO073"}],
-            "desbloquea":[{"semestre":3,"codigo":"INFO088"}]}
-        ]},
-        
-        
-        {
-        "semestre": 3,
-        "cantidad_ramos":6,
-        "ciclo":"Bachiller en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Física: Mecánica", "codigo":"BAIN077", "semestral":true,
-            "prerequisitos":[
-                {"semestre":1,"codigo":"BAIN065"},
-                {"semestre":1,"codigo":"BAIN067"}],
-            "desbloquea":[{"semestre":2,"codigo":"BAIN085"}]},
-
-            {"nombre":"Comunicación idioma Inglés", "codigo":"BAIN079", "semestral":true,
-            "prerequisitos":[],
-            "desbloquea":[{"semestre":5,"codigo":"BAIN140"}]},
-
-            {"nombre":"Ecuaciones Diferenciales para Ingeniería", "codigo":"BAIN081", "semestral":true,
-            "prerequisitos":[
-                {"semestre":2,"codigo":"BAIN073"},
-                {"semestre":2,"codigo":"BAIN075"}],
-            "desbloquea":[{"semestre":4,"codigo":"BAIN087"}]},
-
-            {"nombre":"Cálculo en varias Variables", "codigo":"BAIN083", "semestral":true,
-            "prerequisitos":[{"semestre":2,"codigo":"BAIN075"}],
-            "desbloquea":[
-                {"semestres":6,"codigo":"INFO200"},
-                {"semestres":7,"codigo":"INFO221"}]},
-
-            {"nombre":"Estructura de Datos y Algoritmos", "codigo":"INFO085", "semestral":true,
-            "prerequisitos":[{"semestre":2,"codigo":"INFO081"}],
-            "desbloquea":[
-                {"semestre":4,"codigo":"INFO104"},
-                {"semestre":5,"codigo":"INFO145"}]},
-
-            {"nombre":"Taller de Ingeniería: Estructura de Datos y Algoritmos", "codigo":"INFO088", "semestral":true,
-            "prerequisitos":[
-                {"semestre":2,"codigo":"INFO081"},
-                {"semestre":2,"codigo":"INFO083"}],
-            "desbloquea":[
-                {"semestre":4,"codigo":"INFO104"},
-                {"semestre":5,"codigo":"INFO139"},
-                {"semestre":6,"codigo":"INFO208"}]}
-        ]},
-                
+          "nombre": "Geometría para Ingeniería",
+          "codigo": "BAIN067",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": [
+            { "semestre": 2, "codigo": "BAIN075" },
+            { "semestre": 3, "codigo": "BAIN077" }
+          ]
+        },
 
         {
-        "semestre": 4,
-        "cantidad_ramos":6,
-        "ciclo":"Bachiller en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Física: Ondas y electromagnetismo", "codigo":"BAIN085", "semestral":true,
-            "prerequisitos":[
-                {"semestre":3,"codigo":"BAIN083"},
-                {"semestre":3,"codigo":"BAIN077"}],
-            "desbloquea":[{"semestre":5,"codigo":"INFO128"}]},
-                
-            {"nombre":"Métodos numéricos para Ingeniería", "codigo":"BAIN087", "semestral":true,
-            "prerequisitos":[{"semestre":3,"codigo":"BAIN081"}],
-            "desbloquea":[]},
-
-            {"nombre":"Estadística y probabilidades para Ingeniería", "codigo":"BAIN091", "semestral":true,
-            "prerequisitos":[{"semestre":2,"codigo":"BAIN073"}],
-            "desbloquea":[
-                {"semestre":5,"codigo":"INFO145"},
-                {"semestre":6,"codigo":"INFO200"}]},
-            
-            {"nombre":"Programación Orientada a Objeto", "codigo":"INFO090", "semestral":true,
-            "prerequisitos":[{"semestre":2,"codigo":"INFO081"}],
-            "desbloquea":[{"semestre":6,"codigo":"INFO188"}]},
-
-            {"nombre":"Estructuras Discretas", "codigo":"INFO099", "semestral":true,
-            "prerequisitos":[{"semestre":2,"codigo":"BAIN073"}],
-            "desbloquea":[
-                {"semestre":5,"codigo":"INFO139"},
-                {"semestre":5,"codigo":"INFO145"}]},
-
-            {"nombre":"Taller de Construcción de Software", "codigo":"INFO104", "semestral":true,
-            "prerequisitos":[
-                {"semestre":3,"codigo":"INFO085"},
-                {"semestre":3,"codigo":"INFO088"}],
-            "desbloquea":[
-                {"semestre":5,"codigo":"INFO133"},
-                {"semestre":6,"codigo":"INFO188"},
-                {"semestre":6,"codigo":"INFO208"},
-                {"semestre":7,"codigo":"INFO221"},
-                {"semestre":9,"codigo":"INFO289"}]}
-        ]},
-
+          "nombre": "Optativo 1",
+          "codigo": "ELECT12",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
 
         {
-        "semestre": 5,
-        "cantidad_ramos":7,
-        "ciclo":"Licenciatura en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Inglés Instrumental", "codigo":"BAIN140", "semestral":false,
-            "prerequisitos":[{"semestre":3,"codigo":"BAIN079"}],
-            "desbloquea":[{"semestre":6,"codigo":"BAIN150"}]},
-
-            {"nombre":"Práctica inicial", "codigo":"EICI146", "semestral":false,
-            "prerequisitos":[
-                {"semestre":1,"codigo":"BAIN065"},
-                {"semestre":1,"codigo":"BAIN067"},
-                {"semestre":1,"codigo":"ELECT12"},
-                {"semestre":1,"codigo":"INFO063"},
-                {"semestre":1,"codigo":"INFO073"},
-                {"semestre":2,"codigo":"BAIN069"},
-                {"semestre":2,"codigo":"BAIN071"},
-                {"semestre":2,"codigo":"BAIN073"},
-                {"semestre":2,"codigo":"BAIN075"},
-                {"semestre":2,"codigo":"DYRE070"},
-                {"semestre":2,"codigo":"INFO081"},
-                {"semestre":2,"codigo":"INFO083"},
-                {"semestre":3,"codigo":"BAIN077"},
-                {"semestre":3,"codigo":"BAIN079"},
-                {"semestre":3,"codigo":"BAIN081"},
-                {"semestre":3,"codigo":"BAIN083"},
-                {"semestre":3,"codigo":"INFO085"},
-                {"semestre":3,"codigo":"INFO088"},
-                {"semestre":4,"codigo":"BAIN085"},
-                {"semestre":4,"codigo":"BAIN087"},
-                {"semestre":4,"codigo":"BAIN091"},
-                {"semestre":4,"codigo":"INFO090"},
-                {"semestre":4,"codigo":"INFO099"},
-                {"semestre":4,"codigo":"INFO104"}],
-            "desbloquea":[]},
-
-            {"nombre":"Optativo de Especialización 1", "codigo":"ELECT100", "semestral":false,
-            "prerequisitos":[],
-            "desbloquea":[]},
-
-            {"nombre":"Arquitectura de Computadores", "codigo":"INFO128", "semestral":false,
-            "prerequisitos":[
-                {"semestre":1,"codigo":"INFO063"},
-                {"semestre":2,"codigo":"BAIN069"},
-                {"semestre":4,"codigo":"BAIN085"}],
-            "desbloquea":[
-                {"semestre":6,"codigo":"INFO198"}]},
-
-            {"nombre":"Base de Datos", "codigo":"INFO133", "semestral":false,
-            "prerequisitos":[{"semestre":4,"codigo":"INFO104"}],
-            "desbloquea":[{"semestre":6,"codigo":"INFO229"}]},
-
-            {"nombre":"Teoría de Autómatas", "codigo":"INFO139", "semestral":false,
-            "prerequisitos":[
-                {"semestre":3,"codigo":"INFO088"},
-                {"semestre":4,"codigo":"INFO099"}],
-            "desbloquea":[
-                {"semestre":7,"codigo":"INFO239"}]},
-
-            {"nombre":"Diseño y análisis de Algoritmos", "codigo":"INFO145", "semestral":false,
-            "prerequisitos":[
-                {"semestre":3,"codigo":"INFO085"},
-                {"semestre":4,"codigo":"BAIN091"},
-                {"semestre":4,"codigo":"INFO099"}],
-            "desbloquea":[{"semestre":7,"codigo":"INFO257"}]}
-        ]},
-
+          "nombre": "Introducción a la Programación",
+          "codigo": "INFO063",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": [
+            { "semestre": 2, "codigo": "INFO081" },
+            { "semestre": 2, "codigo": "INFO083" },
+            { "semestre": 5, "codigo": "INFO128" }
+          ]
+        },
 
         {
-        "semestre": 6,
-        "cantidad_ramos":6,
-        "ciclo":"Licenciatura en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Inglés Funcional", "codigo":"BAIN150", "semestral":false,
-            "prerequisitos":[{"semestre":5,"codigo":"BAIN140"}],
-            "desbloquea":[]},
+          "nombre": "Taller de Ingeniería: Introducción a la profesión",
+          "codigo": "INFO073",
+          "semestral": false,
+          "prerequisitos": [],
+          "desbloquea": [{ "semestre": 2, "codigo": "INFO083" }]
+        }
+      ]
+    },
 
-            {"nombre":"Programación en Paradigmas Funcional y Paralelo", "codigo":"INFO188", "semestral":false,
-            "prerequisitos":[
-                {"semestre":4,"codigo":"INFO090"},
-                {"semestre":4,"codigo":"INFO104"}],
-            "desbloquea":[{"semestre":7,"codigo":"INFO257"}]},
-
-            {"nombre":"Sistemas Operativos", "codigo":"INFO198", "semestral":false,
-            "prerequisitos":[
-                {"semestre":3,"codigo":"INFO088"},
-                {"semestre":5,"codigo":"INFO128"}],
-            "desbloquea":[
-                {"semestre":7,"codigo":"INFO239"},
-                {"semestre":9,"codigo":"INFO288"}]},
-            
-            {"nombre":"Investigación Operativa", "codigo":"INFO200", "semestral":false,
-            "prerequisitos":[
-                {"semestre":2,"codigo":"BAIN073"},
-                {"semestre":3,"codigo":"BAIN083"},
-                {"semestre":4,"codigo":"BAIN091"}],
-            "desbloquea":[
-                {"semestre":8,"codigo":"INFO270"}]},
-
-            {"nombre":"Ingeniería de Requisitos", "codigo":"INFO208", "semestral":false,
-            "prerequisitos":[
-                {"semestre":4,"codigo":"INFO104"}],
-            "desbloquea":[
-                {"semestre":7,"codigo":"INFO245"},
-                {"semestre":7,"codigo":"INFO248"}]},
-            
-            {"nombre":"Arquitectura de Software", "codigo":"INFO229", "semestral":false,
-            "prerequisitos":[
-                {"semestre":5,"codigo":"INFO133"}],
-            "desbloquea":[{"semestre":7,"codigo":"INFO248"}]}            
-        ]},
-
+    {
+      "semestre": 2,
+      "cantidad_ramos": 7,
+      "ciclo": "Bachiller en Ciencias de la Ingeniería",
+      "ramos": [
+        {
+          "nombre": "Química para Ingeniería",
+          "codigo": "BAIN069",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": [{ "semestre": 5, "codigo": "INFO128" }]
+        },
 
         {
-        "semestre": 7,
-        "cantidad_ramos":6,
-        "ciclo":"Licenciatura en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Optativo de Especialización 2", "codigo":"ELECT101", "semestral":false,
-            "prerequisitos":[],
-            "desbloquea":[]},
-
-            {"nombre":"Gestión Organizacional", "codigo":"INFO221", "semestral":false,
-            "prerequisitos":[
-                {"semestre":3,"codigo":"BAIN083"},
-                {"semestre":4,"codigo":"INFO104"}],
-            "desbloquea":[
-                {"semestre":8,"codigo":"INFO270"},
-                {"semestre":8,"codigo":"INFO278"},
-                {"semestre":8,"codigo":"INFO280"}]},
-            
-            {"nombre":"Comunicaciones", "codigo":"INFO239", "semestral":false,
-            "prerequisitos":[
-                {"semestre":5,"codigo":"INFO139"},
-                {"semestre":6,"codigo":"INFO198"}],
-            "desbloquea":[{"semestre":8,"codigo":"INFO276"}]},
-            
-            {"nombre":"Interacción Humano-Computador", "codigo":"INFO245", "semestral":false,
-            "prerequisitos":[{"semestre":6,"codigo":"INFO208"}],
-            "desbloquea":[{"semestre":8,"codigo":"INFO282"}]},
-
-            {"nombre":"Ingeniería de Software", "codigo":"INFO248", "semestral":false,
-            "prerequisitos":[
-                {"semestre":6,"codigo":"INFO208"},
-                {"semestre":6,"codigo":"INFO229"}],
-            "desbloquea":[
-                {"semestre":8,"codigo":"INFO270"},
-                {"semestre":8,"codigo":"INFO278"},
-                {"semestre":8,"codigo":"INFO282"}]},
-
-            {"nombre":"Inteligencia Artificial", "codigo":"INFO257", "semestral":false,
-            "prerequisitos":[
-                {"semestre":5,"codigo":"INFO145"},
-                {"semestre":6,"codigo":"INFO188"}],
-            "desbloquea":[]}
-        ]},
-
+          "nombre": "Comunicación idioma Español",
+          "codigo": "BAIN071",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
 
         {
-        "semestre": 8,
-        "cantidad_ramos":6,
-        "ciclo":"Licenciatura en Ciencias de la Ingeniería",
-        "ramos": [
-            {"nombre":"Optativo de Especialización 3", "codigo":"ELECT111", "semestral":false,
-            "prerequisitos":[],
-            "desbloquea":[]},
-            
-            {"nombre":"Evaluación de Proyectos Informáticos", "codigo":"INFO270", "semestral":false,
-            "prerequisitos":[
-                {"semestre":6,"codigo":"INFO200"},
-                {"semestre":7,"codigo":"INFO221"},
-                {"semestre":7,"codigo":"INFO248"}],
-            "desbloquea":[
-                {"semestre":9,"codigo":"INFO283"},
-                {"semestre":9,"codigo":"INFO286"}]},
-            
-            {"nombre":"Redes", "codigo":"INFO276", "semestral":false,
-            "prerequisitos":[{"semestre":7,"codigo":"INFO239"}],
-            "desbloquea":[{"semestre":9,"codigo":"INFO289"}]},
-            
-            {"nombre":"Sistemas de Información", "codigo":"INFO278", "semestral":false,
-            "prerequisitos":[
-                {"semestre":7,"codigo":"INFO221"},
-                {"semestre":7,"codigo":"INFO248"}],
-            "desbloquea":[{"semestre":9,"codigo":"INFO286"}]},
-
-            {"nombre":"Seminario de Ética Profesional", "codigo":"INFO280", "semestral":false,
-            "prerequisitos":[{"semestre":7,"codigo":"INFO221"}],
-            "desbloquea":[{"semestre":10,"codigo":"INFO293"}]},
-            
-            {"nombre":"Taller de Ingeniería de Software", "codigo":"INFO282", "semestral":false,
-            "prerequisitos":[
-                {"semestre":7,"codigo":"INFO245"},
-                {"semestre":7,"codigo":"INFO248"}],
-            "desbloquea":[{"semestre":9,"codigo":"INFO290"}]}
-        ]},
-
+          "nombre": "Álgebra lineal para Ingeniería",
+          "codigo": "BAIN073",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 1, "codigo": "BAIN065" }],
+          "desbloquea": [
+            { "semestre": 3, "codigo": "BAIN081" },
+            { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 4, "codigo": "BAIN091" },
+            { "semestre": 6, "codigo": "INFO200" }
+          ]
+        },
 
         {
-        "semestre": 9,
-        "cantidad_ramos":6,
-        "ciclo":"Título profesional de Ingeniero/a Civil en Informática",
-        "ramos": [
-            {"nombre":"Optativo de Profundización 1", "codigo":"ELECT112", "semestral":false,
-            "prerequisitos":[],
-            "desbloquea":[]},
-
-            {"nombre":"Taller de Emprendimiento", "codigo":"INFO283", "semestral":false,
-            "prerequisitos":[{"semestre":8,"codigo":"INFO270"}],
-            "desbloquea":[]},
-
-            {"nombre":"Sistemas de Gestión", "codigo":"INFO286", "semestral":false,
-            "prerequisitos":[
-                {"semestre":8,"codigo":"INFO270"},
-                {"semestre":8,"codigo":"INFO278"}],
-            "desbloquea":[
-                {"semestre":10,"codigo":"INFO293"},
-                {"semestre":10,"codigo":"INFO297"}]},
-
-            
-            {"nombre":"Sistemas Distribuidos", "codigo":"INFO288", "semestral":false,
-            "prerequisitos":[{"semestre":6,"codigo":"INFO198"}],
-            "desbloquea":[]},
-            
-            {"nombre":"Taller de Integración de Tecnología de la Información y Comunicación", "codigo":"INFO289", "semestral":false,
-            "prerequisitos":[
-                {"semestre":4,"codigo":"INFO104"},
-                {"semestre":8,"codigo":"INFO276"}],
-            "desbloquea":[]},
-            
-            {"nombre":"Métodos y Modelos de Ingeniería de Software", "codigo":"INFO290", "semestral":false,
-            "prerequisitos":[{"semestre":8,"codigo":"INFO282"}],
-            "desbloquea":[{"semestre":10,"codigo":"INFO297"}]}            
-        ]},
+          "nombre": "Cálculo en una Variable",
+          "codigo": "BAIN075",
+          "semestral": true,
+          "prerequisitos": [
+            { "semestre": 1, "codigo": "BAIN065" },
+            { "semestre": 1, "codigo": "BAIN067" }
+          ],
+          "desbloquea": [
+            { "semestre": 3, "codigo": "BAIN081" },
+            { "semestre": 3, "codigo": "BAIN083" },
+            { "semestre": 4, "codigo": "BAIN085" }
+          ]
+        },
 
         {
-        "semestre": 10,
-        "cantidad_ramos":4,
-        "ciclo":"Título profesional de Ingeniero/a Civil en Informática",
-        "ramos": [
-            {"nombre":"Optativo de Profundización 2", "codigo":"ELECT116", "semestral":false,
-            "prerequisitos":[],
-            "desbloquea":[]},
-            
-            {"nombre":"Tecnología de la Información para la Gestión Organizacional", "codigo":"INFO293", "semestral":false,
-            "prerequisitos":[
-                {"semestre":8,"codigo":"INFO280"},
-                {"semestre":9,"codigo":"INFO286"}],
-            "desbloquea":[]},
-
-            {"nombre":"Realidad Tecnológica Nacional", "codigo":"INFO294", "semestral":false,
-            "prerequisitos":[
-                {"semestre":1,"codigo":"BAIN065"},
-                {"semestre":1,"codigo":"BAIN067"},
-                {"semestre":1,"codigo":"ELECT12"},
-                {"semestre":1,"codigo":"INFO063"},
-                {"semestre":1,"codigo":"INFO073"},
-                {"semestre":2,"codigo":"BAIN069"},
-                {"semestre":2,"codigo":"BAIN071"},
-                {"semestre":2,"codigo":"BAIN073"},
-                {"semestre":2,"codigo":"BAIN075"},
-                {"semestre":2,"codigo":"DYRE070"},
-                {"semestre":2,"codigo":"INFO081"},
-                {"semestre":2,"codigo":"INFO083"},
-                {"semestre":3,"codigo":"BAIN077"},
-                {"semestre":3,"codigo":"BAIN079"},
-                {"semestre":3,"codigo":"BAIN081"},
-                {"semestre":3,"codigo":"BAIN083"},
-                {"semestre":3,"codigo":"INFO085"},
-                {"semestre":3,"codigo":"INFO088"},
-                {"semestre":4,"codigo":"BAIN085"},
-                {"semestre":4,"codigo":"BAIN087"},
-                {"semestre":4,"codigo":"BAIN091"},
-                {"semestre":4,"codigo":"INFO090"},
-                {"semestre":4,"codigo":"INFO099"},
-                {"semestre":4,"codigo":"INFO104"},
-                {"semestre":5,"codigo":"BAIN140"},
-                {"semestre":5,"codigo":"EICI146"},
-                {"semestre":5,"codigo":"ELECT100"},
-                {"semestre":5,"codigo":"INFO128"},
-                {"semestre":5,"codigo":"INFO133"},
-                {"semestre":5,"codigo":"INFO139"},
-                {"semestre":5,"codigo":"INFO145"},
-                {"semestre":6,"codigo":"BAIN150"},
-                {"semestre":6,"codigo":"INFO188"},
-                {"semestre":6,"codigo":"INFO198"},
-                {"semestre":6,"codigo":"INFO200"},
-                {"semestre":6,"codigo":"INFO208"},
-                {"semestre":6,"codigo":"INFO229"},
-                {"semestre":7,"codigo":"ELECT101"},
-                {"semestre":7,"codigo":"INFO221"},
-                {"semestre":7,"codigo":"INFO239"},
-                {"semestre":7,"codigo":"INFO245"},
-                {"semestre":7,"codigo":"INFO248"},
-                {"semestre":7,"codigo":"INFO257"},
-                {"semestre":8,"codigo":"ELECT111"},
-                {"semestre":8,"codigo":"INFO270"},
-                {"semestre":8,"codigo":"INFO276"},
-                {"semestre":8,"codigo":"INFO278"},
-                {"semestre":8,"codigo":"INFO280"},
-                {"semestre":8,"codigo":"INFO282"},
-                {"semestre":9,"codigo":"ELECT112"},
-                {"semestre":9,"codigo":"INFO283"},
-                {"semestre":9,"codigo":"INFO286"},
-                {"semestre":9,"codigo":"INFO288"},
-                {"semestre":9,"codigo":"INFO289"},
-                {"semestre":9,"codigo":"INFO290"}],
-            "desbloquea":[]},
-
-            {"nombre":"Taller de Título", "codigo":"INFO297", "semestral":false,
-            "prerequisitos":[
-                {"semestre":9,"codigo":"INFO286"},
-                {"semestre":9,"codigo":"INFO289"},
-                {"semestre":9,"codigo":"INFO290"}],
-            "desbloquea":[
-                {"semestre":11,"codigo":"INFO298"},
-                {"semestre":11,"codigo":"INFO299"}]}
-        ]},
-
+          "nombre": "Educación física y salud",
+          "codigo": "DYRE070",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
 
         {
-        "semestre": 11,
-        "cantidad_ramos":3,
-        "ciclo":"Título profesional de Ingeniero/a Civil en Informática",
-        "ramos": [
-            {"nombre":"Práctica Profesional (a) y (b)", "codigo":"INFO295", "semestral":false,
-            "prerequisitos":[
-                {"semestre":1,"codigo":"BAIN065"},
-                {"semestre":1,"codigo":"BAIN067"},
-                {"semestre":1,"codigo":"ELECT12"},
-                {"semestre":1,"codigo":"INFO063"},
-                {"semestre":1,"codigo":"INFO073"},
-                {"semestre":2,"codigo":"BAIN069"},
-                {"semestre":2,"codigo":"BAIN071"},
-                {"semestre":2,"codigo":"BAIN073"},
-                {"semestre":2,"codigo":"BAIN075"},
-                {"semestre":2,"codigo":"DYRE070"},
-                {"semestre":2,"codigo":"INFO081"},
-                {"semestre":2,"codigo":"INFO083"},
-                {"semestre":3,"codigo":"BAIN077"},
-                {"semestre":3,"codigo":"BAIN079"},
-                {"semestre":3,"codigo":"BAIN081"},
-                {"semestre":3,"codigo":"BAIN083"},
-                {"semestre":3,"codigo":"INFO085"},
-                {"semestre":3,"codigo":"INFO088"},
-                {"semestre":4,"codigo":"BAIN085"},
-                {"semestre":4,"codigo":"BAIN087"},
-                {"semestre":4,"codigo":"BAIN091"},
-                {"semestre":4,"codigo":"INFO090"},
-                {"semestre":4,"codigo":"INFO099"},
-                {"semestre":4,"codigo":"INFO104"},
-                {"semestre":5,"codigo":"BAIN140"},
-                {"semestre":5,"codigo":"EICI146"},
-                {"semestre":5,"codigo":"ELECT100"},
-                {"semestre":5,"codigo":"INFO128"},
-                {"semestre":5,"codigo":"INFO133"},
-                {"semestre":5,"codigo":"INFO139"},
-                {"semestre":5,"codigo":"INFO145"},
-                {"semestre":6,"codigo":"BAIN150"},
-                {"semestre":6,"codigo":"INFO188"},
-                {"semestre":6,"codigo":"INFO198"},
-                {"semestre":6,"codigo":"INFO200"},
-                {"semestre":6,"codigo":"INFO208"},
-                {"semestre":6,"codigo":"INFO229"},
-                {"semestre":7,"codigo":"ELECT101"},
-                {"semestre":7,"codigo":"INFO221"},
-                {"semestre":7,"codigo":"INFO239"},
-                {"semestre":7,"codigo":"INFO245"},
-                {"semestre":7,"codigo":"INFO248"},
-                {"semestre":7,"codigo":"INFO257"},
-                {"semestre":8,"codigo":"ELECT111"},
-                {"semestre":8,"codigo":"INFO270"},
-                {"semestre":8,"codigo":"INFO276"},
-                {"semestre":8,"codigo":"INFO278"},
-                {"semestre":8,"codigo":"INFO280"},
-                {"semestre":8,"codigo":"INFO282"},
-                {"semestre":9,"codigo":"ELECT112"},
-                {"semestre":9,"codigo":"INFO283"},
-                {"semestre":9,"codigo":"INFO286"},
-                {"semestre":9,"codigo":"INFO288"},
-                {"semestre":9,"codigo":"INFO289"},
-                {"semestre":9,"codigo":"INFO290"},
-                {"semestre":10,"codigo":"ELECT116"},
-                {"semestre":10,"codigo":"INFO293"},
-                {"semestre":10,"codigo":"INFO294"},
-                {"semestre":10,"codigo":"INFO297"}],
-            "desbloquea":[]},
+          "nombre": "Programación",
+          "codigo": "INFO081",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 1, "codigo": "INFO063" }],
+          "desbloquea": [
+            { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 3, "codigo": "INFO088" }
+          ]
+        },
 
-            
-            {"nombre":"Proyecto de Título: Artículo de Investigación (b)", "codigo":"INFO298", "semestral":false,
-            "prerequisitos":[
-                {"semestre":10,"codigo":"INFO297"}],
-            "desbloquea":[]},
+        {
+          "nombre": "Taller de Ingeniería: Programación aplicada",
+          "codigo": "INFO083",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 1, "codigo": "INFO063" },
+            { "semestre": 1, "codigo": "INFO073" }
+          ],
+          "desbloquea": [{ "semestre": 3, "codigo": "INFO088" }]
+        }
+      ]
+    },
 
-            {"nombre":"Proyecto de Título: Memoria (a)", "codigo":"INFO299", "semestral":false,
-            "prerequisitos":[{"semestre":10,"codigo":"INFO297"}],
-            "desbloquea":[]}  
-        ]}
-    ]
+    {
+      "semestre": 3,
+      "cantidad_ramos": 6,
+      "ciclo": "Bachiller en Ciencias de la Ingeniería",
+      "ramos": [
+        {
+          "nombre": "Física: Mecánica",
+          "codigo": "BAIN077",
+          "semestral": true,
+          "prerequisitos": [
+            { "semestre": 1, "codigo": "BAIN065" },
+            { "semestre": 1, "codigo": "BAIN067" }
+          ],
+          "desbloquea": [{ "semestre": 2, "codigo": "BAIN085" }]
+        },
+
+        {
+          "nombre": "Comunicación idioma Inglés",
+          "codigo": "BAIN079",
+          "semestral": true,
+          "prerequisitos": [],
+          "desbloquea": [{ "semestre": 5, "codigo": "BAIN140" }]
+        },
+
+        {
+          "nombre": "Ecuaciones Diferenciales para Ingeniería",
+          "codigo": "BAIN081",
+          "semestral": true,
+          "prerequisitos": [
+            { "semestre": 2, "codigo": "BAIN073" },
+            { "semestre": 2, "codigo": "BAIN075" }
+          ],
+          "desbloquea": [{ "semestre": 4, "codigo": "BAIN087" }]
+        },
+
+        {
+          "nombre": "Cálculo en varias Variables",
+          "codigo": "BAIN083",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 2, "codigo": "BAIN075" }],
+          "desbloquea": [
+            { "semestres": 6, "codigo": "INFO200" },
+            { "semestres": 7, "codigo": "INFO221" }
+          ]
+        },
+
+        {
+          "nombre": "Estructura de Datos y Algoritmos",
+          "codigo": "INFO085",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 2, "codigo": "INFO081" }],
+          "desbloquea": [
+            { "semestre": 4, "codigo": "INFO104" },
+            { "semestre": 5, "codigo": "INFO145" }
+          ]
+        },
+
+        {
+          "nombre": "Taller de Ingeniería: Estructura de Datos y Algoritmos",
+          "codigo": "INFO088",
+          "semestral": true,
+          "prerequisitos": [
+            { "semestre": 2, "codigo": "INFO081" },
+            { "semestre": 2, "codigo": "INFO083" }
+          ],
+          "desbloquea": [
+            { "semestre": 4, "codigo": "INFO104" },
+            { "semestre": 5, "codigo": "INFO139" },
+            { "semestre": 6, "codigo": "INFO208" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "semestre": 4,
+      "cantidad_ramos": 6,
+      "ciclo": "Bachiller en Ciencias de la Ingeniería",
+      "ramos": [
+        {
+          "nombre": "Física: Ondas y electromagnetismo",
+          "codigo": "BAIN085",
+          "semestral": true,
+          "prerequisitos": [
+            { "semestre": 3, "codigo": "BAIN075" },
+            { "semestre": 3, "codigo": "BAIN077" }
+          ],
+          "desbloquea": [{ "semestre": 5, "codigo": "INFO128" }]
+        },
+
+        {
+          "nombre": "Métodos numéricos para Ingeniería",
+          "codigo": "BAIN087",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 3, "codigo": "BAIN081" }],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Estadística y probabilidades para Ingeniería",
+          "codigo": "BAIN091",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 2, "codigo": "BAIN073" }],
+          "desbloquea": [
+            { "semestre": 5, "codigo": "INFO145" },
+            { "semestre": 6, "codigo": "INFO200" }
+          ]
+        },
+
+        {
+          "nombre": "Programación Orientada a Objeto",
+          "codigo": "INFO090",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 2, "codigo": "INFO081" }],
+          "desbloquea": [{ "semestre": 6, "codigo": "INFO188" }]
+        },
+
+        {
+          "nombre": "Estructuras Discretas",
+          "codigo": "INFO099",
+          "semestral": true,
+          "prerequisitos": [{ "semestre": 2, "codigo": "BAIN073" }],
+          "desbloquea": [
+            { "semestre": 5, "codigo": "INFO139" },
+            { "semestre": 5, "codigo": "INFO145" }
+          ]
+        },
+
+        {
+          "nombre": "Taller de Construcción de Software",
+          "codigo": "INFO104",
+          "semestral": true,
+          "prerequisitos": [
+            { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 3, "codigo": "INFO088" }
+          ],
+          "desbloquea": [
+            { "semestre": 5, "codigo": "INFO133" },
+            { "semestre": 6, "codigo": "INFO188" },
+            { "semestre": 6, "codigo": "INFO208" },
+            { "semestre": 7, "codigo": "INFO221" },
+            { "semestre": 9, "codigo": "INFO289" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "semestre": 5,
+      "cantidad_ramos": 7,
+      "ciclo": "Licenciatura en Ciencias de la Ingeniería",
+      "ramos": [
+        {
+          "nombre": "Inglés Instrumental",
+          "codigo": "BAIN140",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 3, "codigo": "BAIN079" }],
+          "desbloquea": [{ "semestre": 6, "codigo": "BAIN150" }]
+        },
+
+        {
+          "nombre": "Práctica inicial",
+          "codigo": "EICI146",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 1, "codigo": "BAIN065" },
+            { "semestre": 1, "codigo": "BAIN067" },
+            { "semestre": 1, "codigo": "ELECT12" },
+            { "semestre": 1, "codigo": "INFO063" },
+            { "semestre": 1, "codigo": "INFO073" },
+            { "semestre": 2, "codigo": "BAIN069" },
+            { "semestre": 2, "codigo": "BAIN071" },
+            { "semestre": 2, "codigo": "BAIN073" },
+            { "semestre": 2, "codigo": "BAIN075" },
+            { "semestre": 2, "codigo": "DYRE070" },
+            { "semestre": 2, "codigo": "INFO081" },
+            { "semestre": 2, "codigo": "INFO083" },
+            { "semestre": 3, "codigo": "BAIN077" },
+            { "semestre": 3, "codigo": "BAIN079" },
+            { "semestre": 3, "codigo": "BAIN081" },
+            { "semestre": 3, "codigo": "BAIN083" },
+            { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 3, "codigo": "INFO088" },
+            { "semestre": 4, "codigo": "BAIN085" },
+            { "semestre": 4, "codigo": "BAIN087" },
+            { "semestre": 4, "codigo": "BAIN091" },
+            { "semestre": 4, "codigo": "INFO090" },
+            { "semestre": 4, "codigo": "INFO099" },
+            { "semestre": 4, "codigo": "INFO104" }
+          ],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Optativo de Especialización 1",
+          "codigo": "ELECT100",
+          "semestral": false,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Arquitectura de Computadores",
+          "codigo": "INFO128",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 1, "codigo": "INFO063" },
+            { "semestre": 2, "codigo": "BAIN069" },
+            { "semestre": 4, "codigo": "BAIN085" }
+          ],
+          "desbloquea": [{ "semestre": 6, "codigo": "INFO198" }]
+        },
+
+        {
+          "nombre": "Base de Datos",
+          "codigo": "INFO133",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 4, "codigo": "INFO104" }],
+          "desbloquea": [{ "semestre": 6, "codigo": "INFO229" }]
+        },
+
+        {
+          "nombre": "Teoría de Autómatas",
+          "codigo": "INFO139",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 3, "codigo": "INFO088" },
+            { "semestre": 4, "codigo": "INFO099" }
+          ],
+          "desbloquea": [{ "semestre": 7, "codigo": "INFO239" }]
+        },
+
+        {
+          "nombre": "Diseño y análisis de Algoritmos",
+          "codigo": "INFO145",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 4, "codigo": "BAIN091" },
+            { "semestre": 4, "codigo": "INFO099" }
+          ],
+          "desbloquea": [{ "semestre": 7, "codigo": "INFO257" }]
+        }
+      ]
+    },
+
+    {
+      "semestre": 6,
+      "cantidad_ramos": 6,
+      "ciclo": "Licenciatura en Ciencias de la Ingeniería",
+      "ramos": [
+        {
+          "nombre": "Inglés Funcional",
+          "codigo": "BAIN150",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 5, "codigo": "BAIN140" }],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Programación en Paradigmas Funcional y Paralelo",
+          "codigo": "INFO188",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 4, "codigo": "INFO090" },
+            { "semestre": 4, "codigo": "INFO104" }
+          ],
+          "desbloquea": [{ "semestre": 7, "codigo": "INFO257" }]
+        },
+
+        {
+          "nombre": "Sistemas Operativos",
+          "codigo": "INFO198",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 3, "codigo": "INFO088" },
+            { "semestre": 5, "codigo": "INFO128" }
+          ],
+          "desbloquea": [
+            { "semestre": 7, "codigo": "INFO239" },
+            { "semestre": 9, "codigo": "INFO288" }
+          ]
+        },
+
+        {
+          "nombre": "Investigación Operativa",
+          "codigo": "INFO200",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 2, "codigo": "BAIN073" },
+            { "semestre": 3, "codigo": "BAIN083" },
+            { "semestre": 4, "codigo": "BAIN091" }
+          ],
+          "desbloquea": [{ "semestre": 8, "codigo": "INFO270" }]
+        },
+
+        {
+          "nombre": "Ingeniería de Requisitos",
+          "codigo": "INFO208",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 4, "codigo": "INFO104" }],
+          "desbloquea": [
+            { "semestre": 7, "codigo": "INFO245" },
+            { "semestre": 7, "codigo": "INFO248" }
+          ]
+        },
+
+        {
+          "nombre": "Arquitectura de Software",
+          "codigo": "INFO229",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 5, "codigo": "INFO133" }],
+          "desbloquea": [{ "semestre": 7, "codigo": "INFO248" }]
+        }
+      ]
+    },
+
+    {
+      "semestre": 7,
+      "cantidad_ramos": 6,
+      "ciclo": "Licenciatura en Ciencias de la Ingeniería",
+      "ramos": [
+        {
+          "nombre": "Optativo de Especialización 2",
+          "codigo": "ELECT101",
+          "semestral": false,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Gestión Organizacional",
+          "codigo": "INFO221",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 3, "codigo": "BAIN083" },
+            { "semestre": 4, "codigo": "INFO104" }
+          ],
+          "desbloquea": [
+            { "semestre": 8, "codigo": "INFO270" },
+            { "semestre": 8, "codigo": "INFO278" },
+            { "semestre": 8, "codigo": "INFO280" }
+          ]
+        },
+
+        {
+          "nombre": "Comunicaciones",
+          "codigo": "INFO239",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 5, "codigo": "INFO139" },
+            { "semestre": 6, "codigo": "INFO198" }
+          ],
+          "desbloquea": [{ "semestre": 8, "codigo": "INFO276" }]
+        },
+
+        {
+          "nombre": "Interacción Humano-Computador",
+          "codigo": "INFO245",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 6, "codigo": "INFO208" }],
+          "desbloquea": [{ "semestre": 8, "codigo": "INFO282" }]
+        },
+
+        {
+          "nombre": "Ingeniería de Software",
+          "codigo": "INFO248",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 6, "codigo": "INFO208" },
+            { "semestre": 6, "codigo": "INFO229" }
+          ],
+          "desbloquea": [
+            { "semestre": 8, "codigo": "INFO270" },
+            { "semestre": 8, "codigo": "INFO278" },
+            { "semestre": 8, "codigo": "INFO282" }
+          ]
+        },
+
+        {
+          "nombre": "Inteligencia Artificial",
+          "codigo": "INFO257",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 5, "codigo": "INFO145" },
+            { "semestre": 6, "codigo": "INFO188" }
+          ],
+          "desbloquea": []
+        }
+      ]
+    },
+
+    {
+      "semestre": 8,
+      "cantidad_ramos": 6,
+      "ciclo": "Licenciatura en Ciencias de la Ingeniería",
+      "ramos": [
+        {
+          "nombre": "Optativo de Especialización 3",
+          "codigo": "ELECT111",
+          "semestral": false,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Evaluación de Proyectos Informáticos",
+          "codigo": "INFO270",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 6, "codigo": "INFO200" },
+            { "semestre": 7, "codigo": "INFO221" },
+            { "semestre": 7, "codigo": "INFO248" }
+          ],
+          "desbloquea": [
+            { "semestre": 9, "codigo": "INFO283" },
+            { "semestre": 9, "codigo": "INFO286" }
+          ]
+        },
+
+        {
+          "nombre": "Redes",
+          "codigo": "INFO276",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 7, "codigo": "INFO239" }],
+          "desbloquea": [{ "semestre": 9, "codigo": "INFO289" }]
+        },
+
+        {
+          "nombre": "Sistemas de Información",
+          "codigo": "INFO278",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 7, "codigo": "INFO221" },
+            { "semestre": 7, "codigo": "INFO248" }
+          ],
+          "desbloquea": [{ "semestre": 9, "codigo": "INFO286" }]
+        },
+
+        {
+          "nombre": "Seminario de Ética Profesional",
+          "codigo": "INFO280",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 7, "codigo": "INFO221" }],
+          "desbloquea": [{ "semestre": 10, "codigo": "INFO293" }]
+        },
+
+        {
+          "nombre": "Taller de Ingeniería de Software",
+          "codigo": "INFO282",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 7, "codigo": "INFO245" },
+            { "semestre": 7, "codigo": "INFO248" }
+          ],
+          "desbloquea": [{ "semestre": 9, "codigo": "INFO290" }]
+        }
+      ]
+    },
+
+    {
+      "semestre": 9,
+      "cantidad_ramos": 6,
+      "ciclo": "Título profesional de Ingeniero/a Civil en Informática",
+      "ramos": [
+        {
+          "nombre": "Optativo de Profundización 1",
+          "codigo": "ELECT112",
+          "semestral": false,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Taller de Emprendimiento",
+          "codigo": "INFO283",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 8, "codigo": "INFO270" }],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Sistemas de Gestión",
+          "codigo": "INFO286",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 8, "codigo": "INFO270" },
+            { "semestre": 8, "codigo": "INFO278" }
+          ],
+          "desbloquea": [
+            { "semestre": 10, "codigo": "INFO293" },
+            { "semestre": 10, "codigo": "INFO297" }
+          ]
+        },
+
+        {
+          "nombre": "Sistemas Distribuidos",
+          "codigo": "INFO288",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 6, "codigo": "INFO198" }],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Taller de Integración de Tecnología de la Información y Comunicación",
+          "codigo": "INFO289",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 4, "codigo": "INFO104" },
+            { "semestre": 8, "codigo": "INFO276" }
+          ],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Métodos y Modelos de Ingeniería de Software",
+          "codigo": "INFO290",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 8, "codigo": "INFO282" }],
+          "desbloquea": [{ "semestre": 10, "codigo": "INFO297" }]
+        }
+      ]
+    },
+
+    {
+      "semestre": 10,
+      "cantidad_ramos": 4,
+      "ciclo": "Título profesional de Ingeniero/a Civil en Informática",
+      "ramos": [
+        {
+          "nombre": "Optativo de Profundización 2",
+          "codigo": "ELECT116",
+          "semestral": false,
+          "prerequisitos": [],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Tecnología de la Información para la Gestión Organizacional",
+          "codigo": "INFO293",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 8, "codigo": "INFO280" },
+            { "semestre": 9, "codigo": "INFO286" }
+          ],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Realidad Tecnológica Nacional",
+          "codigo": "INFO294",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 1, "codigo": "BAIN065" },
+            { "semestre": 1, "codigo": "BAIN067" },
+            { "semestre": 1, "codigo": "ELECT12" },
+            { "semestre": 1, "codigo": "INFO063" },
+            { "semestre": 1, "codigo": "INFO073" },
+            { "semestre": 2, "codigo": "BAIN069" },
+            { "semestre": 2, "codigo": "BAIN071" },
+            { "semestre": 2, "codigo": "BAIN073" },
+            { "semestre": 2, "codigo": "BAIN075" },
+            { "semestre": 2, "codigo": "DYRE070" },
+            { "semestre": 2, "codigo": "INFO081" },
+            { "semestre": 2, "codigo": "INFO083" },
+            { "semestre": 3, "codigo": "BAIN077" },
+            { "semestre": 3, "codigo": "BAIN079" },
+            { "semestre": 3, "codigo": "BAIN081" },
+            { "semestre": 3, "codigo": "BAIN083" },
+            { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 3, "codigo": "INFO088" },
+            { "semestre": 4, "codigo": "BAIN085" },
+            { "semestre": 4, "codigo": "BAIN087" },
+            { "semestre": 4, "codigo": "BAIN091" },
+            { "semestre": 4, "codigo": "INFO090" },
+            { "semestre": 4, "codigo": "INFO099" },
+            { "semestre": 4, "codigo": "INFO104" },
+            { "semestre": 5, "codigo": "BAIN140" },
+            { "semestre": 5, "codigo": "EICI146" },
+            { "semestre": 5, "codigo": "ELECT100" },
+            { "semestre": 5, "codigo": "INFO128" },
+            { "semestre": 5, "codigo": "INFO133" },
+            { "semestre": 5, "codigo": "INFO139" },
+            { "semestre": 5, "codigo": "INFO145" },
+            { "semestre": 6, "codigo": "BAIN150" },
+            { "semestre": 6, "codigo": "INFO188" },
+            { "semestre": 6, "codigo": "INFO198" },
+            { "semestre": 6, "codigo": "INFO200" },
+            { "semestre": 6, "codigo": "INFO208" },
+            { "semestre": 6, "codigo": "INFO229" },
+            { "semestre": 7, "codigo": "ELECT101" },
+            { "semestre": 7, "codigo": "INFO221" },
+            { "semestre": 7, "codigo": "INFO239" },
+            { "semestre": 7, "codigo": "INFO245" },
+            { "semestre": 7, "codigo": "INFO248" },
+            { "semestre": 7, "codigo": "INFO257" },
+            { "semestre": 8, "codigo": "ELECT111" },
+            { "semestre": 8, "codigo": "INFO270" },
+            { "semestre": 8, "codigo": "INFO276" },
+            { "semestre": 8, "codigo": "INFO278" },
+            { "semestre": 8, "codigo": "INFO280" },
+            { "semestre": 8, "codigo": "INFO282" },
+            { "semestre": 9, "codigo": "ELECT112" },
+            { "semestre": 9, "codigo": "INFO283" },
+            { "semestre": 9, "codigo": "INFO286" },
+            { "semestre": 9, "codigo": "INFO288" },
+            { "semestre": 9, "codigo": "INFO289" },
+            { "semestre": 9, "codigo": "INFO290" }
+          ],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Taller de Título",
+          "codigo": "INFO297",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 9, "codigo": "INFO286" },
+            { "semestre": 9, "codigo": "INFO289" },
+            { "semestre": 9, "codigo": "INFO290" }
+          ],
+          "desbloquea": [
+            { "semestre": 11, "codigo": "INFO298" },
+            { "semestre": 11, "codigo": "INFO299" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "semestre": 11,
+      "cantidad_ramos": 3,
+      "ciclo": "Título profesional de Ingeniero/a Civil en Informática",
+      "ramos": [
+        {
+          "nombre": "Práctica Profesional (a) y (b)",
+          "codigo": "INFO295",
+          "semestral": false,
+          "prerequisitos": [
+            { "semestre": 1, "codigo": "BAIN065" },
+            { "semestre": 1, "codigo": "BAIN067" },
+            { "semestre": 1, "codigo": "ELECT12" },
+            { "semestre": 1, "codigo": "INFO063" },
+            { "semestre": 1, "codigo": "INFO073" },
+            { "semestre": 2, "codigo": "BAIN069" },
+            { "semestre": 2, "codigo": "BAIN071" },
+            { "semestre": 2, "codigo": "BAIN073" },
+            { "semestre": 2, "codigo": "BAIN075" },
+            { "semestre": 2, "codigo": "DYRE070" },
+            { "semestre": 2, "codigo": "INFO081" },
+            { "semestre": 2, "codigo": "INFO083" },
+            { "semestre": 3, "codigo": "BAIN077" },
+            { "semestre": 3, "codigo": "BAIN079" },
+            { "semestre": 3, "codigo": "BAIN081" },
+            { "semestre": 3, "codigo": "BAIN083" },
+            { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 3, "codigo": "INFO088" },
+            { "semestre": 4, "codigo": "BAIN085" },
+            { "semestre": 4, "codigo": "BAIN087" },
+            { "semestre": 4, "codigo": "BAIN091" },
+            { "semestre": 4, "codigo": "INFO090" },
+            { "semestre": 4, "codigo": "INFO099" },
+            { "semestre": 4, "codigo": "INFO104" },
+            { "semestre": 5, "codigo": "BAIN140" },
+            { "semestre": 5, "codigo": "EICI146" },
+            { "semestre": 5, "codigo": "ELECT100" },
+            { "semestre": 5, "codigo": "INFO128" },
+            { "semestre": 5, "codigo": "INFO133" },
+            { "semestre": 5, "codigo": "INFO139" },
+            { "semestre": 5, "codigo": "INFO145" },
+            { "semestre": 6, "codigo": "BAIN150" },
+            { "semestre": 6, "codigo": "INFO188" },
+            { "semestre": 6, "codigo": "INFO198" },
+            { "semestre": 6, "codigo": "INFO200" },
+            { "semestre": 6, "codigo": "INFO208" },
+            { "semestre": 6, "codigo": "INFO229" },
+            { "semestre": 7, "codigo": "ELECT101" },
+            { "semestre": 7, "codigo": "INFO221" },
+            { "semestre": 7, "codigo": "INFO239" },
+            { "semestre": 7, "codigo": "INFO245" },
+            { "semestre": 7, "codigo": "INFO248" },
+            { "semestre": 7, "codigo": "INFO257" },
+            { "semestre": 8, "codigo": "ELECT111" },
+            { "semestre": 8, "codigo": "INFO270" },
+            { "semestre": 8, "codigo": "INFO276" },
+            { "semestre": 8, "codigo": "INFO278" },
+            { "semestre": 8, "codigo": "INFO280" },
+            { "semestre": 8, "codigo": "INFO282" },
+            { "semestre": 9, "codigo": "ELECT112" },
+            { "semestre": 9, "codigo": "INFO283" },
+            { "semestre": 9, "codigo": "INFO286" },
+            { "semestre": 9, "codigo": "INFO288" },
+            { "semestre": 9, "codigo": "INFO289" },
+            { "semestre": 9, "codigo": "INFO290" },
+            { "semestre": 10, "codigo": "ELECT116" },
+            { "semestre": 10, "codigo": "INFO293" },
+            { "semestre": 10, "codigo": "INFO294" },
+            { "semestre": 10, "codigo": "INFO297" }
+          ],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Proyecto de Título: Artículo de Investigación (b)",
+          "codigo": "INFO298",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 10, "codigo": "INFO297" }],
+          "desbloquea": []
+        },
+
+        {
+          "nombre": "Proyecto de Título: Memoria (a)",
+          "codigo": "INFO299",
+          "semestral": false,
+          "prerequisitos": [{ "semestre": 10, "codigo": "INFO297" }],
+          "desbloquea": []
+        }
+      ]
+    }
+  ]
 }
