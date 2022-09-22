@@ -23,7 +23,7 @@
 
 .clicked {
   opacity: 1;
-  background-color: var(--clicked) !important;
+  background-color: var(--clicked);
   color: white;
 }
 

@@ -126,7 +126,9 @@ function cargarInfo(){
                             if (onElement.classList.contains("d") && !onElement.classList.contains("clicked")){
                                 onElement.classList.add("clicked");
                             }
-                            else{
+                            else if (checkPreRequisitos(info.ramos[idx])) {
+                                onElement.classList.remove("clicked");
+                            } else{
                                 onElement.classList.toggle("clicked");
                                 onElement.classList.toggle("d");
                             }
@@ -158,19 +160,72 @@ function cargarInfo(){
                                         let postRamo = document.getElementById(`${post.codigo}`);
                                         // Es decir, se "desbloqueo" el ramo
                                         postRamo.classList.add("d");
-
-                                    }else{
+                                        postRamo.classList.remove("clicked");
+                                    }
+                                    else{
                                         let postRamo = document.getElementById(`${post.codigo}`);
                                         postRamo.classList.remove("d");
-
+                                        postRamo.classList.remove("clicked");
                                     }
                                 }
                             }
 
                         }, false);
 
+                        // onRamo.addEventListener("click", (event) => {
+                        //     // Destructuring
+                            
 
+                        //     // Click en elemento activa la clase "clicked"
+                        //     var onElement = document.getElementById(`${info.ramos[idx].codigo}`);
+
+                        //     if (onElement.classList.contains("d") && !onElement.classList.contains("clicked")){
+                        //         onElement.classList.add("clicked");
+                        //     }
+                        //     else{
+                        //         onElement.classList.toggle("clicked");
+                        //         onElement.classList.toggle("d");
+                        //     }
+
+                        //     // Si el elemento activa este eventListener, revisa los "desbloquea"
+                        //     // dentro de "desbloquea" revisa que todos los "pre-requisitos" tengan la clase "clicked"
+
+                        //     // Si existen desbloqueables para el ramo seleccionado, revisa que los prerequisitos estén clicked
+                        //     if(info.ramos[idx].desbloquea.length){
+                        //         // Recorremos los desbloqueables
+                                
+                        //         for (let post of info.ramos[idx].desbloquea){
+                        //             // Buscamos el post en el json 
+                        //             let infoRamoPost = buscarRamo(data, post, maxRamos);
+                        //             // Revisamos sus prerequisitos
+
+
+                        //             let preChecked = [];
+                        //             let preR = []
+                        //             for (let pre of infoRamoPost.prerequisitos){
+                        //                 // Si el prerequisito está "clicked", se activa la clase "d"
+                        //                 let preRamo = document.getElementById(`${pre.codigo}`);
+                        //                 preChecked.push(preRamo.classList.contains("clicked"));
+                        //                 preR.push(preRamo);
+                        //             }
+
+                        //             // Si todos los prerequisitos están "clicked", se activa la clase "d"
+                        //             if(preChecked.every((val) => val === true)){
+                        //                 let postRamo = document.getElementById(`${post.codigo}`);
+                        //                 // Es decir, se "desbloqueo" el ramo
+                        //                 postRamo.classList.add("d");
+
+                        //             }
+                        //             else{
+                        //                 let postRamo = document.getElementById(`${post.codigo}`);
+                        //                 postRamo.classList.remove("d");
+                        //             }
+                        //         }
+                        //     }
+
+                        // }, false);
                     };
+
                 }
             }
         }
@@ -187,4 +242,15 @@ function buscarRamo(data, ramo_abuscar, maxRamos){
             }
         }
     }
+}
+
+function checkPreRequisitos(ramo){
+    let preChecked = [];
+    for(let pre of ramo.prerequisitos){
+        let preRamo = document.getElementById(`${pre.codigo}`);
+        preChecked.push(preRamo.classList.contains("clicked"));
+    }
+
+    return preChecked.every((val) => val === true);
+
 }

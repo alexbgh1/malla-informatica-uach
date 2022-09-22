@@ -89,6 +89,7 @@
           "desbloquea": [
             { "semestre": 3, "codigo": "BAIN081" },
             { "semestre": 3, "codigo": "INFO085" },
+            { "semestre": 4, "codigo": "INFO099" },
             { "semestre": 4, "codigo": "BAIN091" },
             { "semestre": 6, "codigo": "INFO200" }
           ]
@@ -124,7 +125,8 @@
           "prerequisitos": [{ "semestre": 1, "codigo": "INFO063" }],
           "desbloquea": [
             { "semestre": 3, "codigo": "INFO085" },
-            { "semestre": 3, "codigo": "INFO088" }
+            { "semestre": 3, "codigo": "INFO088" },
+            { "semestre": 4, "codigo": "INFO090" }
           ]
         },
 
