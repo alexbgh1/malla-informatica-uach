@@ -1,0 +1,29 @@
+:root{
+  --clicked: #c495ca;
+}
+
+.card-panel {
+  opacity: 0.3;
+  padding: 13px;
+  cursor: default;
+  border-radius: 2%;
+  box-shadow: 3px 3px #d4e2ed80;
+}
+.square {
+  height: 50px;
+  width: 50px;
+  border: 1px rgb(202, 209, 211) solid;
+  box-shadow: 1px 1px var(--no-semestral);
+  margin: 10px 10px 10px 10px;
+}
+
+.d {
+  opacity: 1;
+}
+
+.clicked {
+  opacity: 1;
+  background-color: var(--clicked) !important;
+  color: white;
+}
+

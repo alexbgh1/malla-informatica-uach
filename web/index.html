@@ -6,28 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Malla Informática Uach</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/navb.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="image/logoUach.png" />
 </head>
 <body>
-    <main>
-        <div class="up">
-            <a href="https://www.uach.cl/dw/admision/plandeestudio.php?car=1708" style="height: 0;">
-                <img alt="logo uach" src="image/logoUach.png" width="50px" height="auto">
-            </a>
-            <h1 class="title" id ="carrera"></h1>
+    <nav class="menu-container">
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!-- logo -->
+        <div></div>
+        <a href="https://www.uach.cl/dw/admision/plandeestudio.php?car=1708" class="menu-logo">
+            <img src="image/logoUach.png" alt="logoUach"/>
+        </a>
+        <h1 class="title" id ="carrera" style="font-size: 20px;"></h1>
+        
+        <!-- menu items -->
+        <div class="menu">
+            <ul>
+            </ul>
+            <ul>
+            <li>
+                <a href="/web/index.html" class="active">
+                Malla
+                </a>
+            </li>
+            <li>
+                <a href="/web/check.html">
+                Check
+                </a>
+            </li>
+            </ul>
         </div>
-        <table>
-            <thead>
-                <tr id="semestres">
-                    <!-- codigo.js inserta semestres -->
-                </tr>
-            </thead>
-            <tbody id="info-semestres">
-                <!-- codigo.js inserta la información de cada semestre -->
-            </tbody>
-        </table>
+    </nav>
+    <main>
+        <div style="margin-top: 25px;"></div>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr id="semestres">
+                        <!-- codigo.js inserta semestres -->
+                    </tr>
+                </thead>
+                <tbody id="info-semestres">
+                    <!-- codigo.js inserta la información de cada semestre -->
+                </tbody>
+            </table>
+        </div>
         <div class="infografia">
             <div class="align-infografia">
                 <div class="square" style="background-color: var(--semestral);"></div>
@@ -53,6 +83,6 @@
         </div>
 
     </main>
-    <script src="code.js"></script>
+    <script src="./js/code.js" type="module"></script>
 </body>
 </html>
