@@ -21,5 +21,5 @@
 <p>A lo anterior se suma algunos elementos de <b>CSS</b> para que se vea un poco mejor.</p>
 
 <h2>Errores y mejoras</h2>
-<p>El código creado <b>no está optimizado</b> y probablemente existen <b>malas prácticas</b> en el código. <b>No es responsive</b> a teléfonos o pantallas medianas/pequeñas en general.</p>
+<p>El código creado <b>no está optimizado</b> y probablemente existen <b>malas prácticas</b> en el código. <del><b>No es responsive</b> a teléfonos o pantallas medianas/pequeñas en general.</del></p>
 <p>A pesar de estos errores, no los considero tan graves dado el tamaño de la página y el tipo de uso, ya que cumple con el propósito dado al inicio.</p>
