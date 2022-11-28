@@ -227,7 +227,7 @@
           "codigo": "BAIN085",
           "semestral": true,
           "prerequisitos": [
-            { "semestre": 3, "codigo": "BAIN075" },
+            { "semestre": 2, "codigo": "BAIN075" },
             { "semestre": 3, "codigo": "BAIN077" }
           ],
           "desbloquea": [{ "semestre": 5, "codigo": "INFO128" }]
