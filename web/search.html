@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Malla Informática Uach</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/estilos_search.css" />
+    <link rel="stylesheet" href="./css/navb.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="image/png" href="image/logoUach.png" />
+  </head>
+  <body>
+    <nav class="menu-container">
+      <!-- burger menu -->
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!-- logo -->
+      <div></div>
+      <a
+        href="https://www.uach.cl/dw/admision/plandeestudio.php?car=1708"
+        class="menu-logo"
+      >
+        <img src="image/logoUach.png" alt="logoUach" />
+      </a>
+      <h1 class="title" id="carrera" style="font-size: 20px"></h1>
+
+      <!-- menu items -->
+      <div class="menu">
+        <ul></ul>
+        <ul>
+          <li>
+            <a href="./index.html" style="padding: 7px 4px"> Malla </a>
+          </li>
+          <li>
+            <a href="./check.html" style="padding: 7px 4px"> Check </a>
+          </li>
+          <li>
+            <a href="./search.html" style="padding: 7px 4px" class="active">
+              Search
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main style="padding-bottom: 30px">
+      <div>
+        <div class="input-codigo">
+          <label for="buscar-codigo">Código de asignatura a buscar:</label>
+          <input
+            id="buscar-codigo"
+            onkeyup="filterCodigo()"
+            placeholder="INFO063"
+          />
+        </div>
+        <div class="todos-los-ramos"></div>
+      </div>
+      <div class="requisitos-container">
+        <h2>Requisitos para: <span class="codigo-requisitos"></span></h2>
+        <div class="requisitos" style="display: none">
+          <table class="tabla-requisitos">
+            <thead>
+              <tr>
+                <!-- codigo.js inserta semestres -->
+                <th>Semestre</th>
+                <th>Nombre</th>
+                <th>Código</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- codigo.js inserta la información de cada semestre -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="./js/code_search.js"></script>
+  </body>
+</html>

@@ -9,6 +9,7 @@
 
 <a href="https://alexbgh1.github.io/malla-informatica-uach/web/">Visitar propuesta Malla Informática Uach</a>
 <img src="https://github.com/alexbgh1/malla-informatica-uach/blob/main/img_README/img_muestra.png?raw=true">
+<small>La imágen al ser referencial, está propensa a cambios</small>
 <h2>Proceso</h2>
 <h3>Creación de datos</h3>
 <p>El primer paso, el más importante y a la vez engorroso, fue la creación de los datos que se almacenan en <b>malla_uach.json</b>, se requería un archivo de lectura capaz de diferenciar los datos de cada semestre, con los respectivos ramos y entre estos, los respectivos pre-requisitos y ramos desbloqueables.</p>
