@@ -33,7 +33,7 @@
         {
           "nombre": "Optativo 1",
           "codigo": "ELECT12",
-          "semestral": true,
+          "semestral": false,
           "prerequisitos": [],
           "desbloquea": []
         },
@@ -44,10 +44,7 @@
           "semestral": true,
           "prerequisitos": [],
           "desbloquea": [
-            { "semestre": 2, "codigo": "INFO081" },
-            { "semestre": 2, "codigo": "INFO083" },
-            { "semestre": 5, "codigo": "INFO128" }
-          ]
+            { "semestre": 2, "codigo": "INFO081" }]
         },
 
         {
@@ -70,7 +67,7 @@
           "codigo": "BAIN069",
           "semestral": true,
           "prerequisitos": [],
-          "desbloquea": [{ "semestre": 5, "codigo": "INFO128" }]
+          "desbloquea": []
         },
 
         {
@@ -88,7 +85,6 @@
           "prerequisitos": [{ "semestre": 1, "codigo": "BAIN065" }],
           "desbloquea": [
             { "semestre": 3, "codigo": "BAIN081" },
-            { "semestre": 3, "codigo": "INFO085" },
             { "semestre": 4, "codigo": "INFO099" },
             { "semestre": 4, "codigo": "BAIN091" },
             { "semestre": 6, "codigo": "INFO200" }
@@ -162,9 +158,9 @@
         {
           "nombre": "Comunicación idioma Inglés",
           "codigo": "BAIN079",
-          "semestral": true,
+          "semestral": false,
           "prerequisitos": [],
-          "desbloquea": [{ "semestre": 5, "codigo": "BAIN140" }]
+          "desbloquea": []
         },
 
         {
@@ -211,7 +207,8 @@
           "desbloquea": [
             { "semestre": 4, "codigo": "INFO104" },
             { "semestre": 5, "codigo": "INFO139" },
-            { "semestre": 6, "codigo": "INFO208" }
+            { "semestre": 5, "codigo": "INFO128" },
+            { "semestre": 6, "codigo": "INFO198" }
           ]
         }
       ]
@@ -230,7 +227,7 @@
             { "semestre": 2, "codigo": "BAIN075" },
             { "semestre": 3, "codigo": "BAIN077" }
           ],
-          "desbloquea": [{ "semestre": 5, "codigo": "INFO128" }]
+          "desbloquea": []
         },
 
         {
@@ -248,6 +245,7 @@
           "prerequisitos": [{ "semestre": 2, "codigo": "BAIN073" }],
           "desbloquea": [
             { "semestre": 5, "codigo": "INFO145" },
+            { "semestre": 5, "codigo": "INFO128" },
             { "semestre": 6, "codigo": "INFO200" }
           ]
         },
@@ -267,6 +265,7 @@
           "prerequisitos": [{ "semestre": 2, "codigo": "BAIN073" }],
           "desbloquea": [
             { "semestre": 5, "codigo": "INFO139" },
+            { "semestre": 5, "codigo": "INFO128" },
             { "semestre": 5, "codigo": "INFO145" }
           ]
         },
@@ -281,7 +280,6 @@
           ],
           "desbloquea": [
             { "semestre": 5, "codigo": "INFO133" },
-            { "semestre": 6, "codigo": "INFO188" },
             { "semestre": 6, "codigo": "INFO208" },
             { "semestre": 7, "codigo": "INFO221" },
             { "semestre": 9, "codigo": "INFO289" }
@@ -299,7 +297,7 @@
           "nombre": "Inglés Instrumental",
           "codigo": "BAIN140",
           "semestral": false,
-          "prerequisitos": [{ "semestre": 3, "codigo": "BAIN079" }],
+          "prerequisitos": [],
           "desbloquea": [{ "semestre": 6, "codigo": "BAIN150" }]
         },
 
@@ -333,11 +331,11 @@
             { "semestre": 4, "codigo": "INFO099" },
             { "semestre": 4, "codigo": "INFO104" }
           ],
-          "desbloquea": []
+          "desbloquea": [{ "semestre": 7, "codigo": "INFO221" }]
         },
 
         {
-          "nombre": "Optativo de Especialización 1",
+          "nombre": "Optativo de Especialización I",
           "codigo": "ELECT100",
           "semestral": false,
           "prerequisitos": [],
@@ -349,11 +347,13 @@
           "codigo": "INFO128",
           "semestral": false,
           "prerequisitos": [
-            { "semestre": 1, "codigo": "INFO063" },
-            { "semestre": 2, "codigo": "BAIN069" },
-            { "semestre": 4, "codigo": "BAIN085" }
+            { "semestre": 3, "codigo": "INFO088" },
+            { "semestre": 4, "codigo": "INFO099" },
+            { "semestre": 4, "codigo": "BAIN091" }
           ],
-          "desbloquea": [{ "semestre": 6, "codigo": "INFO198" }]
+          "desbloquea": [{ "semestre": 6, "codigo": "INFO198" },
+                        {"semestre": 6, "codigo": "INFO188"}
+                      ]
         },
 
         {
@@ -361,7 +361,9 @@
           "codigo": "INFO133",
           "semestral": false,
           "prerequisitos": [{ "semestre": 4, "codigo": "INFO104" }],
-          "desbloquea": [{ "semestre": 6, "codigo": "INFO229" }]
+          "desbloquea": [{ "semestre": 6, "codigo": "INFO229" },
+                        {"semestre": 6, "codigo": "INFO208"}
+          ]
         },
 
         {
@@ -384,7 +386,8 @@
             { "semestre": 4, "codigo": "BAIN091" },
             { "semestre": 4, "codigo": "INFO099" }
           ],
-          "desbloquea": [{ "semestre": 7, "codigo": "INFO257" }]
+          "desbloquea": [{ "semestre": 7, "codigo": "INFO257" },
+          {"semestre": 6, "codigo": "INFO188" }]
         }
       ]
     },
@@ -399,7 +402,7 @@
           "codigo": "BAIN150",
           "semestral": false,
           "prerequisitos": [{ "semestre": 5, "codigo": "BAIN140" }],
-          "desbloquea": []
+          "desbloquea": [{ "semestre": 7, "codigo": "INFO245" }]
         },
 
         {
@@ -408,7 +411,8 @@
           "semestral": false,
           "prerequisitos": [
             { "semestre": 4, "codigo": "INFO090" },
-            { "semestre": 4, "codigo": "INFO104" }
+            { "semestre": 5, "codigo": "INFO128" },
+            { "semestre": 5, "codigo": "INFO145" }
           ],
           "desbloquea": [{ "semestre": 7, "codigo": "INFO257" }]
         },
@@ -443,7 +447,7 @@
           "nombre": "Ingeniería de Requisitos",
           "codigo": "INFO208",
           "semestral": false,
-          "prerequisitos": [{ "semestre": 4, "codigo": "INFO104" }],
+          "prerequisitos": [{ "semestre": 4, "codigo": "INFO104" },{"semestre": 5, "codigo": "INFO133" }],
           "desbloquea": [
             { "semestre": 7, "codigo": "INFO245" },
             { "semestre": 7, "codigo": "INFO248" }
@@ -466,7 +470,7 @@
       "ciclo": "Licenciatura en Ciencias de la Ingeniería",
       "ramos": [
         {
-          "nombre": "Optativo de Especialización 2",
+          "nombre": "Optativo de Especialización II",
           "codigo": "ELECT101",
           "semestral": false,
           "prerequisitos": [],
@@ -479,7 +483,8 @@
           "semestral": false,
           "prerequisitos": [
             { "semestre": 3, "codigo": "BAIN083" },
-            { "semestre": 4, "codigo": "INFO104" }
+            { "semestre": 4, "codigo": "INFO104" },
+            { "semestre": 5, "codigo": "EICI146" }
           ],
           "desbloquea": [
             { "semestre": 8, "codigo": "INFO270" },
@@ -503,7 +508,7 @@
           "nombre": "Interacción Humano-Computador",
           "codigo": "INFO245",
           "semestral": false,
-          "prerequisitos": [{ "semestre": 6, "codigo": "INFO208" }],
+          "prerequisitos": [{"semestre": 6, "codigo": "BAIN150" },{ "semestre": 6, "codigo": "INFO208" }],
           "desbloquea": [{ "semestre": 8, "codigo": "INFO282" }]
         },
 
@@ -541,7 +546,7 @@
       "ciclo": "Licenciatura en Ciencias de la Ingeniería",
       "ramos": [
         {
-          "nombre": "Optativo de Especialización 3",
+          "nombre": "Optativo de Especialización III",
           "codigo": "ELECT111",
           "semestral": false,
           "prerequisitos": [],
@@ -609,7 +614,7 @@
       "ciclo": "Título profesional de Ingeniero/a Civil en Informática",
       "ramos": [
         {
-          "nombre": "Optativo de Profundización 1",
+          "nombre": "Optativo de Profundización I",
           "codigo": "ELECT112",
           "semestral": false,
           "prerequisitos": [],
@@ -654,7 +659,7 @@
             { "semestre": 4, "codigo": "INFO104" },
             { "semestre": 8, "codigo": "INFO276" }
           ],
-          "desbloquea": []
+          "desbloquea": [{ "semestre": 10, "codigo": "INFO297" }]
         },
 
         {
@@ -673,7 +678,7 @@
       "ciclo": "Título profesional de Ingeniero/a Civil en Informática",
       "ramos": [
         {
-          "nombre": "Optativo de Profundización 2",
+          "nombre": "Optativo de Profundización II",
           "codigo": "ELECT116",
           "semestral": false,
           "prerequisitos": [],
@@ -738,19 +743,7 @@
             { "semestre": 7, "codigo": "INFO239" },
             { "semestre": 7, "codigo": "INFO245" },
             { "semestre": 7, "codigo": "INFO248" },
-            { "semestre": 7, "codigo": "INFO257" },
-            { "semestre": 8, "codigo": "ELECT111" },
-            { "semestre": 8, "codigo": "INFO270" },
-            { "semestre": 8, "codigo": "INFO276" },
-            { "semestre": 8, "codigo": "INFO278" },
-            { "semestre": 8, "codigo": "INFO280" },
-            { "semestre": 8, "codigo": "INFO282" },
-            { "semestre": 9, "codigo": "ELECT112" },
-            { "semestre": 9, "codigo": "INFO283" },
-            { "semestre": 9, "codigo": "INFO286" },
-            { "semestre": 9, "codigo": "INFO288" },
-            { "semestre": 9, "codigo": "INFO289" },
-            { "semestre": 9, "codigo": "INFO290" }
+            { "semestre": 7, "codigo": "INFO257" }
           ],
           "desbloquea": []
         },
@@ -830,17 +823,7 @@
             { "semestre": 8, "codigo": "INFO276" },
             { "semestre": 8, "codigo": "INFO278" },
             { "semestre": 8, "codigo": "INFO280" },
-            { "semestre": 8, "codigo": "INFO282" },
-            { "semestre": 9, "codigo": "ELECT112" },
-            { "semestre": 9, "codigo": "INFO283" },
-            { "semestre": 9, "codigo": "INFO286" },
-            { "semestre": 9, "codigo": "INFO288" },
-            { "semestre": 9, "codigo": "INFO289" },
-            { "semestre": 9, "codigo": "INFO290" },
-            { "semestre": 10, "codigo": "ELECT116" },
-            { "semestre": 10, "codigo": "INFO293" },
-            { "semestre": 10, "codigo": "INFO294" },
-            { "semestre": 10, "codigo": "INFO297" }
+            { "semestre": 8, "codigo": "INFO282" }
           ],
           "desbloquea": []
         },
