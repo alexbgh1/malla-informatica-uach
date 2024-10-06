@@ -14,7 +14,7 @@
 
 <h2>Contribuciones</h2>
 <b>Gracias a:</b>
-<p><a href="https://github.com/PipeCordova">PipeCordova</a> por actualizar el json con los ramos del 2023 👋</p>
+<p><a href="https://github.com/fcordovav">PipeCordova</a> por actualizar el json con los ramos del 2023 👋</p>
 
 <h2>Proceso</h2>
 <h3>Creación de datos</h3>
